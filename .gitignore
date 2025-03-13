@@ -1,0 +1,43 @@
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Environment variables
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# MacOS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+
+# Forge coverage report
+lcov.info
+coverage/
+
+# Dependencies
+lib/
+
+# Build artifacts
+*.bin
+*.abi
+
+# Docs
+docs/
+
+# Anvil files
+anvil/ 

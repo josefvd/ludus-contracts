@@ -1,0 +1,51 @@
+[profile.default]
+src = 'src'
+test = 'test'
+out = 'out'
+libs = ['lib']
+solc_version = '0.8.17'
+gas_reports = ["*"]
+optimizer = true
+optimizer_runs = 10_000
+via_ir = false
+bytecode_hash = "none"
+ffi = true
+fs_permissions = [{ access = "read-write", path = "./" }]
+
+remappings = [
+    "@chainlink/=lib/chainlink-brownie-contracts/contracts/src/v0.8/",
+    "@chainlink-brownie/=lib/chainlink-brownie-contracts/",
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "@eas/=lib/eas-contracts/contracts/",
+    "@juicebox/=lib/juice-contracts-v4/src/",
+    "@aave/=lib/aave-v3-core/contracts/",
+    "ds-test/=lib/forge-std/lib/ds-test/src/",
+    "forge-std/=lib/forge-std/src/"
+]
+
+[fmt]
+bracket_spacing = true
+int_types = "long"
+line_length = 120
+multiline_func_header = "all"
+number_underscore = "thousands"
+quote_style = "double"
+tab_width = 4
+wrap_comments = true
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
+[rpc_endpoints]
+base_sepolia = "https://sepolia.base.org"
+
+[etherscan]
+mainnet = { key = "${ETHERSCAN_API_KEY}" }
+optimism = { key = "${OPTIMISM_API_KEY}" }
+arbitrum = { key = "${ARBITRUM_API_KEY}" }
+polygon = { key = "${POLYGON_API_KEY}" }
+goerli = { key = "${ETHERSCAN_API_KEY}" }
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+[profile.fork]
+base_sepolia = { chain_id = 84532 }
+

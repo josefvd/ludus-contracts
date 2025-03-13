@@ -1,0 +1,34 @@
+{
+  "name": "@ludus-gauntlet/contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for the Ludus Gauntlet protocol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludus-gauntlet/contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart-contracts",
+    "foundry",
+    "ludus",
+    "gauntlet",
+    "achievements"
+  ],
+  "author": "Ludus Gauntlet Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ludus-gauntlet/contracts/issues"
+  },
+  "homepage": "https://github.com/ludus-gauntlet/contracts#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "prettier": "^2.8.8",
+    "solhint": "^3.4.1"
+  },
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "lint": "solhint 'contracts/**/*.sol'"
+  }
+} 
