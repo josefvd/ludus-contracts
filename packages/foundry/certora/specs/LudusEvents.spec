@@ -135,6 +135,116 @@ rule registrationStatusUpdated(uint256 eventId, uint256 profileId) {
     assert newStatus == true;
 }
 
+// Rule: Treasury distribution must be valid
+rule validTreasuryDistribution(uint256 athletesShare, uint256 organizerShare, uint256 charityShare, address charityAddress) {
+    env e;
+    
+    // Create event with specified distribution
+    uint256 eventId = createEvent(
+        e.block.timestamp + 10000, // startTime (future)
+        e.block.timestamp + 20000, // endTime
+        e.block.timestamp + 1000, // registrationStartTime
+        e.block.timestamp + 5000, // registrationEndTime
+        10, // maxParticipants
+        1000000, // registrationFeeUSDC (1 USDC)
+        0, // registrationFeeETH
+        e.msg.sender, // refereeAddress
+        e.msg.sender, // organizerAddress
+        athletesShare, // athletesShare
+        organizerShare, // organizerShare
+        charityShare, // charityShare
+        charityAddress, // charityAddress
+        // Empty positions and percentages for simplicity
+        new uint256[](0), 
+        new uint256[](0),
+        false, // preferYieldGeneration
+        "Test Event", // name
+        "Test Description", // description
+        "Tournament", // eventType
+        "Virtual", // venue
+        "Gaming", // sport
+        new string[](0), // rules
+        new string[](0), // requirements
+        new uint256[](0), // ticketPrices
+        new string[](0), // ticketTierNames
+        new uint256[](0), // sponsorshipPrices
+        new string[](0) // sponsorshipTierNames
+    ) at withrevert;
+    
+    // If event creation succeeds, distribution must be valid
+    if (!lastReverted) {
+        // Sum of shares must not exceed 9700 (97%, with 3% Ludus tax)
+        assert athletesShare + organizerShare + charityShare <= 9700, 
+               "Invalid distribution: total share exceeds 97%";
+        
+        // If charity share is greater than 0, charity address must be valid
+        if (charityShare > 0) {
+            assert charityAddress != 0, 
+                   "Invalid charity address with non-zero charity share";
+        }
+    }
+}
+
+// Rule: Event timeline must be valid
+rule validEventTimeline(uint256 startTime, uint256 endTime, uint256 registrationStartTime, uint256 registrationEndTime) {
+    env e;
+    
+    // Try to create an event with the given timeline parameters
+    uint256 eventId = createEvent(
+        startTime, // startTime
+        endTime, // endTime
+        registrationStartTime, // registrationStartTime
+        registrationEndTime, // registrationEndTime
+        10, // maxParticipants
+        1000000, // registrationFeeUSDC
+        0, // registrationFeeETH
+        e.msg.sender, // refereeAddress
+        e.msg.sender, // organizerAddress
+        3000, // athletesShare
+        3000, // organizerShare
+        3000, // charityShare
+        e.msg.sender, // charityAddress
+        // Empty positions and percentages for simplicity
+        new uint256[](0),
+        new uint256[](0),
+        false, // preferYieldGeneration
+        "Test Event", // name
+        "Test Description", // description
+        "Tournament", // eventType
+        "Virtual", // venue
+        "Gaming", // sport
+        new string[](0), // rules
+        new string[](0), // requirements
+        new uint256[](0), // ticketPrices
+        new string[](0), // ticketTierNames
+        new uint256[](0), // sponsorshipPrices
+        new string[](0) // sponsorshipTierNames
+    ) at withrevert;
+    
+    // If event creation succeeds, timeline must be valid
+    if (!lastReverted) {
+        // Start time must be in the future
+        assert startTime > e.block.timestamp, 
+               "Invalid start time: must be in the future";
+        
+        // End time must be after start time
+        assert endTime > startTime, 
+               "Invalid end time: must be after start time";
+        
+        // Registration start time must be before registration end time
+        assert registrationStartTime < registrationEndTime, 
+               "Invalid registration period: start must be before end";
+        
+        // Registration must end before event starts
+        assert registrationEndTime <= startTime, 
+               "Invalid timeline: registration must end before event starts";
+        
+        // Registration start time must be in the future
+        assert registrationStartTime >= e.block.timestamp, 
+               "Invalid registration start time: must be in the future";
+    }
+}
+
 // Invariant: Event status transitions are valid
 // Created (0) -> Started (1) -> Completed (2) or Created (0) -> Canceled (3)
 invariant validEventStatusTransitions(uint256 eventId)
