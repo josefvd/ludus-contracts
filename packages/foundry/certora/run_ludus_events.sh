@@ -3,15 +3,12 @@
 # Script to run Certora verification for LudusEvents only
 echo "Running Certora verification for LudusEvents contract..."
 
-# Set up environment
-if [ -z "$CERTORAKEY" ]; then
-    echo "CERTORAKEY is not set. Please enter your Certora key: "
-    read -s CERTORAKEY
-    export CERTORAKEY
-fi
-
 # Navigate to root directory
 cd "$(dirname "$0")/../.." || exit 1
+
+# Set the Certora key directly here
+# Replace YOUR_CERTORA_KEY with your actual key
+export CERTORAKEY="YOUR_CERTORA_KEY"
 
 # Run verification focusing on the treasury distribution and event timeline rules
 echo "Running validation of treasury distribution and event timeline rules..."
