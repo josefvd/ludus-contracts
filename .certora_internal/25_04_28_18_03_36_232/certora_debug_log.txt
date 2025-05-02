@@ -1,0 +1,22 @@
+Saving last configuration file to .certora_internal/25_04_28_18_03_36_232/run.conf
+Package @openzeppelin/contracts/ is given a path ending with a `/`, which could confuse solc: lib/openzeppelin-contracts/contracts/
+Package @juicebox/ is given a path ending with a `/`, which could confuse solc: lib/nana-core/src/
+Package @eas/ is given a path ending with a `/`, which could confuse solc: lib/eas-contracts/contracts/
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+Creating dir /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_04_28_18_03_36_232/.certora_config
+In /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents.spec, found the imports: []
+copying spec file /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents.spec to /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_04_28_18_03_36_232/.certora_sources/.0_LudusEvents.spec.spec
+writing /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_04_28_18_03_36_232/.certora_verify.json
+Local checks of CVL specification files disabled. It is recommended to enable the checks.
+
+building file src/LudusEvents.sol
+Running cmd /opt/homebrew/bin/solc --version
+stdout, stderr = .certora_internal/25_04_28_18_03_36_232/.certora_config/version_check_solc.stdout, .certora_internal/25_04_28_18_03_36_232/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run /opt/homebrew/bin/solc --version time: 0.1249
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_04_28_18_03_36_232/.certora_config/LudusEvents.sol_0/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/" --standard-json
+stdout, stderr = .certora_internal/25_04_28_18_03_36_232/.certora_config/LudusEvents.sol_0.standard.stdout.json, .certora_internal/25_04_28_18_03_36_232/.certora_config/LudusEvents.sol_0.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_04_28_18_03_36_232/.certora_config/LudusEvents.sol_0/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/" --standard-json time: 0.0965
+reading standard json data from .certora_internal/25_04_28_18_03_36_232/.certora_config/LudusEvents.sol_0.standard.stdout.json
+build failed

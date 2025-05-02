@@ -1,0 +1,15 @@
+# LudusEvents Verification Plan
+
+This table tracks the properties verified for the `LudusEvents` contract using Certora.
+
+| Property / Formal Rule                | Description                                                                                                | Correct? | Inductive? | CVL Rule(s)                                | Status        | Notes                                                                 |
+| :------------------------------------ | :--------------------------------------------------------------------------------------------------------- | :------- | :--------- | :----------------------------------------- | :------------ | :-------------------------------------------------------------------- |
+| `checkCreateEventTimeline`            | Events must be created with a valid timeline (start > now, end > start, reg_start < reg_end, reg_end <= start). | Yes      | Base Case  | `checkCreateEventTimeline`                 | **Blocked**   | Proves property holds upon creation. Blocked by CVL syntax errors. |
+| `checkCreateEventTreasuryDistribution` | Events must be created with a valid treasury split (sum = 97%) and valid charity address if needed.          | Yes      | Base Case  | `checkCreateEventTreasuryDistribution`     | **Blocked**   | Proves property holds upon creation. Blocked by CVL syntax errors. |
+| `validEventStatusTransitions`         | Event status can only transition in valid ways (Created -> Started/Canceled, Started -> Completed).        | Yes      | Yes        | `validEventStatusTransitions` (invariant) | (Not Run Yet) | Assumes timeline/distribution validity (currently removed).          |
+| `onlyOwnerCanCancelEvent`             | Only the contract owner can cancel an event.                                                               | Yes      | N/A        | `onlyOwnerCanCancelEvent`                  | (Not Run Yet) | Assumes timeline/distribution validity (currently removed).          |
+| `onlyCreatorOrRefereeCanStartEvent`   | Only the event creator, referee, or owner can start an event.                                            | Yes      | N/A        | `onlyCreatorOrRefereeCanStartEvent`      | (Not Run Yet) | Assumes timeline/distribution validity (currently removed).          |
+| `onlyCreatorOrRefereeCanCompleteEvent`| Only the event creator, referee, or owner can complete an event.                                         | Yes      | N/A        | `onlyCreatorOrRefereeCanCompleteEvent`   | (Not Run Yet) | Assumes timeline/distribution validity (currently removed).          |
+| *... (add other existing/planned rules)* | *...*                                                                                                      | ...      | ...        | *...*                                      | ...           |                                                                       |
+
+*(**Note:** "Inductive?" here indicates if the property itself needs to hold across states (Yes), if the rule is proving a Base Case for induction (Base Case), or if the rule operates on an assumed valid state (N/A for simple access control)).* 

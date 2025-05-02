@@ -1,0 +1,4 @@
+Package path node_modules/@openzeppelin does not exist or is not a directory
+Package path node_modules/@jbx-protocol/juice-contracts-v3 does not exist or is not a directory
+Package path node_modules/@ethereum-attestation-service/eas-contracts does not exist or is not a directory
+'send_only' is deprecated and is now the default. In CI, use 'wait_for_results none' instead

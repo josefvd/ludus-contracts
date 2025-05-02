@@ -1,0 +1,26 @@
+Note: attribute packages value in CLI (@eas/=packages/foundry/node_modules/@ethereum-attestation-service/eas-contracts/ @juicebox/=packages/foundry/node_modules/@jbx-protocol/juice-contracts-v3/ @openzeppelin/=packages/foundry/node_modules/@openzeppelin/) overrides value stored in conf file (@openzeppelin=node_modules/@openzeppelin @juicebox=node_modules/@jbx-protocol/juice-contracts-v3 @eas=node_modules/@ethereum-attestation-service/eas-contracts)
+Package path packages/foundry/node_modules/@ethereum-attestation-service/eas-contracts/ does not exist or is not a directory
+Package path packages/foundry/node_modules/@jbx-protocol/juice-contracts-v3/ does not exist or is not a directory
+Package path packages/foundry/node_modules/@openzeppelin/ does not exist or is not a directory
+Saving last configuration file to .certora_internal/25_04_28_11_56_47_938/run.conf
+Package @eas/ is given a path ending with a `/`, which could confuse solc: packages/foundry/node_modules/@ethereum-attestation-service/eas-contracts/
+Package @juicebox/ is given a path ending with a `/`, which could confuse solc: packages/foundry/node_modules/@jbx-protocol/juice-contracts-v3/
+Package @openzeppelin/ is given a path ending with a `/`, which could confuse solc: packages/foundry/node_modules/@openzeppelin/
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+Creating dir /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_04_28_11_56_47_938/.certora_config
+In /Users/josevera/Documents/GitHub/ludus-contracts/packages/foundry/certora/specs/LudusEvents.spec, found the imports: []
+copying spec file /Users/josevera/Documents/GitHub/ludus-contracts/packages/foundry/certora/specs/LudusEvents.spec to /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_04_28_11_56_47_938/.certora_sources/.0_LudusEvents.spec.spec
+writing /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_04_28_11_56_47_938/.certora_verify.json
+Local checks of CVL specification files disabled. It is recommended to enable the checks.
+
+building file packages/foundry/certora_package/contracts/LudusEvents.sol
+Running cmd /Users/josevera/Documents/GitHub/ludus-contracts/certora-venv/bin/solc --version
+stdout, stderr = .certora_internal/25_04_28_11_56_47_938/.certora_config/version_check_solc.stdout, .certora_internal/25_04_28_11_56_47_938/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run /Users/josevera/Documents/GitHub/ludus-contracts/certora-venv/bin/solc --version time: 0.117
+Running cmd /Users/josevera/Documents/GitHub/ludus-contracts/certora-venv/bin/solc -o ".certora_internal/25_04_28_11_56_47_938/.certora_config/LudusEvents.sol_0/" --overwrite --allow-paths ".",.,"packages/foundry/node_modules/@ethereum-attestation-service/eas-contracts/","packages/foundry/node_modules/@jbx-protocol/juice-contracts-v3/","packages/foundry/node_modules/@openzeppelin/" --standard-json
+stdout, stderr = .certora_internal/25_04_28_11_56_47_938/.certora_config/LudusEvents.sol_0.standard.stdout.json, .certora_internal/25_04_28_11_56_47_938/.certora_config/LudusEvents.sol_0.standard.stderr.json
+Exitcode 0
+Solc run /Users/josevera/Documents/GitHub/ludus-contracts/certora-venv/bin/solc -o ".certora_internal/25_04_28_11_56_47_938/.certora_config/LudusEvents.sol_0/" --overwrite --allow-paths ".",.,"packages/foundry/node_modules/@ethereum-attestation-service/eas-contracts/","packages/foundry/node_modules/@jbx-protocol/juice-contracts-v3/","packages/foundry/node_modules/@openzeppelin/" --standard-json time: 0.0999
+reading standard json data from .certora_internal/25_04_28_11_56_47_938/.certora_config/LudusEvents.sol_0.standard.stdout.json
+build failed

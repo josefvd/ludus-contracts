@@ -1,0 +1,13 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (LudusEvents.spec:5:1): Syntax error: unexpected token near `struct`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (LudusEvents.spec:44:88): Syntax error: unexpected token near `=`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (LudusEvents.spec:51:101): Syntax error: unexpected token near `=`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (LudusEvents.spec:62:65): Syntax error: unexpected token near `.`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

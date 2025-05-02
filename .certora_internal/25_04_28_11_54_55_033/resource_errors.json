@@ -1,0 +1,13 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (LudusEvents.spec:44:14): Syntax error: unexpected token near `f`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

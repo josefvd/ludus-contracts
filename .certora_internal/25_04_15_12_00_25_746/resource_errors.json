@@ -1,0 +1,13 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (LudusEvents.spec:43:7): Syntax error: unexpected token near `internal`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}
