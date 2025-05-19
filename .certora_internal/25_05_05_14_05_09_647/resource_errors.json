@@ -1,0 +1,21 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (LudusEvents.spec:16:17): Syntax error: unexpected token near `id`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (LudusEvents.spec:21:17): Syntax error: unexpected token near `athletesShare`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (LudusEvents.spec:66:63): Syntax error: unexpected token near `{`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

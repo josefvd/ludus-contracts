@@ -1,0 +1,17 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (LudusEvents.spec:26:23): Syntax error: unexpected token near `,`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (LudusEvents.spec:41:44): Syntax error: unexpected token near `,`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

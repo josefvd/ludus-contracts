@@ -1,0 +1,14 @@
+Note: attribute msg value in CLI (Running verification with minimal braced invariant) overrides value stored in conf file (Verification of LudusEvents createEvent Rules ONLY)
+Saving last configuration file to .certora_internal/25_05_05_13_56_20_837/run.conf
+Package @openzeppelin/contracts/ is given a path ending with a `/`, which could confuse solc: lib/openzeppelin-contracts/contracts/
+Package @juicebox/ is given a path ending with a `/`, which could confuse solc: lib/nana-core/src/
+Package @eas/ is given a path ending with a `/`, which could confuse solc: lib/eas-contracts/contracts/
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+Creating dir /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_05_13_56_20_837/.certora_config
+In /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents.spec, found the imports: []
+copying spec file /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents.spec to /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_05_13_56_20_837/.certora_sources/.0_LudusEvents.spec.spec
+writing /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_05_13_56_20_837/.certora_verify.json
+Failed to run Certora Prover locally. Please check the errors below for problems in the specifications (.spec files) or the prover_args defined in the .conf file.
+[main] ERROR ALWAYS - Found errors in certora/specs/LudusEvents.spec:
+[main] ERROR ALWAYS - Error in spec file (LudusEvents.spec:32:31): Syntax error: unexpected token near `{`
+build failed

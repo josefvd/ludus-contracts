@@ -10,3 +10,6 @@
 [submodule "lib/nana-core"]
 	path = lib/nana-core
 	url = https://github.com/Bananapus/nana-core
+[submodule "lib/aave-v3-core"]
+	path = lib/aave-v3-core
+	url = https://github.com/aave/aave-v3-core

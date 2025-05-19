@@ -1,0 +1,17 @@
+@chainlink/contracts/=node_modules/@chainlink/contracts/
+@eas/=lib/eas-contracts/contracts/
+@juicebox/=lib/juice-contracts-v4/src/
+@nana/=lib/nana-core/contracts/
+@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/
+@permit2/=lib/permit2/src/
+forge-std/=lib/forge-std/src/
+ds-test/=lib/forge-std/lib/ds-test/src/
+solidity-bytes-utils/=lib/solidity-bytes-utils/contracts/
+@aave/=lib/aave-v3-core/contracts/
+uniswap/v3-periphery/=node_modules/@uniswap/v3-periphery/
+uniswap/v3-core/=node_modules/@uniswap/v3-core/
+eth-optimism/contracts/=node_modules/@eth-optimism/contracts/
+solmate/=lib/solmate/src/
+src/=src/
+interfaces/=src/interfaces/
+libraries/=src/libraries/
