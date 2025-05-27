@@ -1,8 +1,0 @@
-{
-    "importFilesToOrigRelpaths": {},
-    "primary_contract": "LudusEvents",
-    "specfile": "/Users/josevera/Documents/GitHub/ludus-contracts/packages/foundry/certora/specs/LudusEvents.spec",
-    "specfileOrigRelpath": "packages/foundry/certora/specs/LudusEvents.spec",
-    "specfilesToImportDecls": {},
-    "type": "spec"
-}

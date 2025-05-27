@@ -1,3 +1,0 @@
-Note: attribute verify value in CLI (LudusEvents:certora/specs/LudusEvents.spec) overrides value stored in conf file (LudusEventsImpl:certora/specs/LudusEvents.spec)
-Note: attribute solc value in CLI (solc8.19) overrides value stored in conf file (/opt/homebrew/bin/solc)
-'send_only' is deprecated and is now the default. In CI, use 'wait_for_results none' instead

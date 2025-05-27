@@ -1,2 +1,0 @@
-Note: attribute verify value in CLI (LudusEvents:certora/specs/LudusEvents.spec) overrides value stored in conf file (LudusEventsImpl:certora/specs/LudusEvents.spec)
-Saving last configuration file to .certora_internal/25_05_06_18_24_40_023/run.conf

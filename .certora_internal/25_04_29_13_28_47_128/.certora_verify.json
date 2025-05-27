@@ -1,8 +1,0 @@
-{
-    "importFilesToOrigRelpaths": {},
-    "primary_contract": "LudusEventsImpl",
-    "specfile": "certora/specs/LudusEvents.spec",
-    "specfileOrigRelpath": "certora/specs/LudusEvents.spec",
-    "specfilesToImportDecls": {},
-    "type": "spec"
-}

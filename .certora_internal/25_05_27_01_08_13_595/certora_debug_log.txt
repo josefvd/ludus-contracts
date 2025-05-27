@@ -1,0 +1,272 @@
+Saving last configuration file to .certora_internal/25_05_27_01_08_13_595/run.conf
+Package @openzeppelin/contracts/ is given a path ending with a `/`, which could confuse solc: lib/openzeppelin-contracts/contracts/
+Package @juicebox/ is given a path ending with a `/`, which could confuse solc: lib/nana-core/src/
+Package @eas/ is given a path ending with a `/`, which could confuse solc: lib/eas-contracts/contracts/
+Package aave-v3-core/ is given a path ending with a `/`, which could confuse solc: lib/aave-v3-core/
+You are using certora-cli version 7.28.0; however, version 7.29.1 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+Creating dir /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_config
+In /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents_treasury.spec, found the imports: []
+copying spec file /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents_treasury.spec to /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/.0_LudusEvents_treasury.spec.spec
+writing /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_verify.json
+Local checks of CVL specification files disabled. It is recommended to enable the checks.
+
+building file certora/harness/Stub_EAS.sol
+Running cmd /opt/homebrew/bin/solc --version
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/version_check_solc.stdout, .certora_internal/25_05_27_01_08_13_595/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run /opt/homebrew/bin/solc --version time: 0.0967
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.2311
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaResolver.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaResolver.sol'])
+Contracts in Stub_EAS.sol_0 (file certora/harness/Stub_EAS.sol): ['Stub_EAS']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol:Stub_EAS'), (274184521717934524641157099916833587201, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol:IEAS')]
+Working on contract Stub_EAS
+Working on contract Stub_EAS
+Working on contract IEAS
+Working on contract IEAS
+For contracts of primary Stub_EAS
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol:Stub_EAS in [(274184521717934524641157099916833587200, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol:Stub_EAS'), (274184521717934524641157099916833587201, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol:IEAS')]
+Contracts in SDC Stub_EAS.sol_0: ['Stub_EAS', 'IEAS']
+Building source tree
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaResolver.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaResolver.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/specs/LudusEvents_treasury.spec to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/specs/LudusEvents_treasury.spec
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_EAS.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/remappings.txt to .certora_internal/25_05_27_01_08_13_595/.certora_sources/remappings.txt
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/conf/events_treasury.conf to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/conf/events_treasury.conf
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/package.json to .certora_internal/25_05_27_01_08_13_595/.certora_sources/package.json
+Backing up current .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.0
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.2263
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_EAS.sol_0.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaResolver.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaResolver.sol'])
+Contracts in Stub_EAS.sol_0 (file .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol): ['Stub_EAS']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587202, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol:Stub_EAS'), (274184521717934524641157099916833587203, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol:IEAS')]
+Working on contract Stub_EAS
+Working on contract Stub_EAS
+Working on contract IEAS
+Working on contract IEAS
+For contracts of primary Stub_EAS
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol:Stub_EAS in [(274184521717934524641157099916833587202, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_EAS.sol:Stub_EAS'), (274184521717934524641157099916833587203, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol:IEAS')]
+Contracts in SDC Stub_EAS.sol_0: ['Stub_EAS', 'IEAS']
+Backing up instrumented .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.post_autofinders.0
+Rolling back .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.0 version
+Libraries to add = []
+
+building file certora/harness/Stub_LudusIdentity.sol
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.2075
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol'])
+Contracts in Stub_LudusIdentity.sol_1 (file certora/harness/Stub_LudusIdentity.sol): ['Stub_LudusIdentity']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587204, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol:Stub_LudusIdentity'), (274184521717934524641157099916833587205, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol:ILudusIdentity')]
+Working on contract Stub_LudusIdentity
+Working on contract Stub_LudusIdentity
+Working on contract ILudusIdentity
+Working on contract ILudusIdentity
+For contracts of primary Stub_LudusIdentity
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol:Stub_LudusIdentity in [(274184521717934524641157099916833587204, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol:Stub_LudusIdentity'), (274184521717934524641157099916833587205, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol:ILudusIdentity')]
+Contracts in SDC Stub_LudusIdentity.sol_1: ['Stub_LudusIdentity', 'ILudusIdentity']
+Building source tree
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_LudusIdentity.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ILudusIdentity.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol
+Backing up current .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.1
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.2492
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_LudusIdentity.sol_1.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol'])
+Contracts in Stub_LudusIdentity.sol_1 (file .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol): ['Stub_LudusIdentity']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587206, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol:Stub_LudusIdentity'), (274184521717934524641157099916833587207, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol:ILudusIdentity')]
+Working on contract Stub_LudusIdentity
+Working on contract Stub_LudusIdentity
+Working on contract ILudusIdentity
+Working on contract ILudusIdentity
+For contracts of primary Stub_LudusIdentity
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol:Stub_LudusIdentity in [(274184521717934524641157099916833587206, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_LudusIdentity.sol:Stub_LudusIdentity'), (274184521717934524641157099916833587207, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ILudusIdentity.sol:ILudusIdentity')]
+Contracts in SDC Stub_LudusIdentity.sol_1: ['Stub_LudusIdentity', 'ILudusIdentity']
+Backing up instrumented .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.post_autofinders.1
+Rolling back .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.1 version
+Libraries to add = []
+
+building file certora/harness/Stub_SchemaRegistry.sol
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.1324
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaResolver.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaResolver.sol'])
+Contracts in Stub_SchemaRegistry.sol_2 (file certora/harness/Stub_SchemaRegistry.sol): ['Stub_SchemaRegistry']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587208, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol:Stub_SchemaRegistry'), (274184521717934524641157099916833587209, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol:ISchemaRegistry')]
+Working on contract Stub_SchemaRegistry
+Working on contract Stub_SchemaRegistry
+Working on contract ISchemaRegistry
+Working on contract ISchemaRegistry
+For contracts of primary Stub_SchemaRegistry
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol:Stub_SchemaRegistry in [(274184521717934524641157099916833587208, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol:Stub_SchemaRegistry'), (274184521717934524641157099916833587209, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol:ISchemaRegistry')]
+Contracts in SDC Stub_SchemaRegistry.sol_2: ['Stub_SchemaRegistry', 'ISchemaRegistry']
+Building source tree
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_SchemaRegistry.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/ISchemaRegistry.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol
+Backing up current .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.2
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.151
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_SchemaRegistry.sol_2.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaResolver.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IEAS.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaResolver.sol'])
+Contracts in Stub_SchemaRegistry.sol_2 (file .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol): ['Stub_SchemaRegistry']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587210, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol:Stub_SchemaRegistry'), (274184521717934524641157099916833587211, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol:ISchemaRegistry')]
+Working on contract Stub_SchemaRegistry
+Working on contract Stub_SchemaRegistry
+Working on contract ISchemaRegistry
+Working on contract ISchemaRegistry
+For contracts of primary Stub_SchemaRegistry
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol:Stub_SchemaRegistry in [(274184521717934524641157099916833587210, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_SchemaRegistry.sol:Stub_SchemaRegistry'), (274184521717934524641157099916833587211, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/ISchemaRegistry.sol:ISchemaRegistry')]
+Contracts in SDC Stub_SchemaRegistry.sol_2: ['Stub_SchemaRegistry', 'ISchemaRegistry']
+Backing up instrumented .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.post_autofinders.2
+Rolling back .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.2 version
+Libraries to add = []
+
+building file certora/harness/Stub_USDC.sol
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.1465
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol'])
+Contracts in Stub_USDC.sol_3 (file certora/harness/Stub_USDC.sol): ['Stub_USDC']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587212, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol:Stub_USDC'), (274184521717934524641157099916833587213, '/Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol:IERC20')]
+Working on contract Stub_USDC
+Working on contract Stub_USDC
+Working on contract IERC20
+Working on contract IERC20
+For contracts of primary Stub_USDC
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol:Stub_USDC in [(274184521717934524641157099916833587212, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol:Stub_USDC'), (274184521717934524641157099916833587213, '/Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol:IERC20')]
+Contracts in SDC Stub_USDC.sol_3: ['Stub_USDC', 'IERC20']
+Building source tree
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_USDC.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol
+Backing up current .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.3
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.1345
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_USDC.sol_3.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol'])
+Contracts in Stub_USDC.sol_3 (file .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol): ['Stub_USDC']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587214, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol:Stub_USDC'), (274184521717934524641157099916833587215, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol:IERC20')]
+Working on contract Stub_USDC
+Working on contract Stub_USDC
+Working on contract IERC20
+Working on contract IERC20
+For contracts of primary Stub_USDC
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol:Stub_USDC in [(274184521717934524641157099916833587214, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_USDC.sol:Stub_USDC'), (274184521717934524641157099916833587215, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol:IERC20')]
+Contracts in SDC Stub_USDC.sol_3: ['Stub_USDC', 'IERC20']
+Backing up instrumented .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.post_autofinders.3
+Rolling back .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.3 version
+Libraries to add = []
+
+building file certora/harness/Stub_YieldManager.sol
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.1653
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol'])
+Contracts in Stub_YieldManager.sol_4 (file certora/harness/Stub_YieldManager.sol): ['Stub_YieldManager']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587216, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol:Stub_YieldManager'), (274184521717934524641157099916833587217, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol:IYieldManager')]
+Working on contract Stub_YieldManager
+Working on contract Stub_YieldManager
+Working on contract IYieldManager
+Working on contract IYieldManager
+For contracts of primary Stub_YieldManager
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol:Stub_YieldManager in [(274184521717934524641157099916833587216, '/Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol:Stub_YieldManager'), (274184521717934524641157099916833587217, '/Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol:IYieldManager')]
+Contracts in SDC Stub_YieldManager.sol_4: ['Stub_YieldManager', 'IYieldManager']
+Building source tree
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/certora/harness/Stub_YieldManager.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol
+Copying /Users/josevera/Documents/GitHub/ludus-contracts/src/interfaces/IYieldManager.sol to .certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol
+Backing up current .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.4
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4.standard.stderr.json
+Exitcode 0
+Solc run /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4/" --overwrite --allow-paths "/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json time: 0.1684
+reading standard json data from .certora_internal/25_05_27_01_08_13_595/.certora_config/Stub_YieldManager.sol_4.standard.stdout.json
+collecting worklist for /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol'])
+Adding a base contract link ref /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol to worklist
+Processing dependencies from file /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol
+available keys: dict_keys(['/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol', '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol'])
+Contracts in Stub_YieldManager.sol_4 (file .certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol): ['Stub_YieldManager']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587218, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol:Stub_YieldManager'), (274184521717934524641157099916833587219, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol:IYieldManager')]
+Working on contract Stub_YieldManager
+Working on contract Stub_YieldManager
+Working on contract IYieldManager
+Working on contract IYieldManager
+For contracts of primary Stub_YieldManager
+finding primary contract address of /Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol:Stub_YieldManager in [(274184521717934524641157099916833587218, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/certora/harness/Stub_YieldManager.sol:Stub_YieldManager'), (274184521717934524641157099916833587219, '/Users/josevera/Documents/GitHub/ludus-contracts/.certora_internal/25_05_27_01_08_13_595/.certora_sources/src/interfaces/IYieldManager.sol:IYieldManager')]
+Contracts in SDC Stub_YieldManager.sol_4: ['Stub_YieldManager', 'IYieldManager']
+Backing up instrumented .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.post_autofinders.4
+Rolling back .certora_sources to .certora_internal/25_05_27_01_08_13_595/.certora_sources/.pre_autofinders.4 version
+Libraries to add = []
+
+building file src/LudusEventsImpl.sol
+Running cmd /opt/homebrew/bin/solc -o ".certora_internal/25_05_27_01_08_13_595/.certora_config/LudusEventsImpl.sol_5/" --overwrite --allow-paths ".",.,"lib/eas-contracts/contracts/","lib/nana-core/src/","lib/openzeppelin-contracts/contracts/","lib/aave-v3-core/" --standard-json
+stdout, stderr = .certora_internal/25_05_27_01_08_13_595/.certora_config/LudusEventsImpl.sol_5.standard.stdout.json, .certora_internal/25_05_27_01_08_13_595/.certora_config/LudusEventsImpl.sol_5.standard.stderr.json
